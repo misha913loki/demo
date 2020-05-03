@@ -13,7 +13,7 @@ var Exp = errors.New("some exported error") // MATCH /error var.*Exp.*ErrFoo/
 var (
 	e1 = fmt.Errorf("blah %d", 4) // MATCH /error var.*e1.*errFoo/
 	// E2 ...
-	E2 = fmt.Errorf("blah %d", 5) // MATCH /error var.*E2.*ErrFoo/
+	//E2 = fmt.Errorf("blah %d", 5) // MATCH /error var.*E2.*ErrFoo/
 )
 
 func f() {
