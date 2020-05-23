@@ -22,6 +22,7 @@ func f() {
 }
 
 // Check for the error strings themselves.
+// 测试新加一行，导致下面的检测行号发生变化
 
 func g(x int) error {
 	var err error
